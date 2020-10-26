@@ -60,3 +60,5 @@ IFTTTのActionを変更することで、メール通知などにも変更が可
 fcnakahara.netをお名前.comで購入し、firebaseに設定済み。
 
 # 注意
+
+なし
