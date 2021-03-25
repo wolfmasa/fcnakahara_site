@@ -30,6 +30,12 @@
       [data-aos^=zoom][data-aos^=zoom] {
         opacity: 1;
       }
+
+      *::-ms-backdrop,
+      [data-aos^=fade-up][data-aos^=fade-up],
+      [data-aos^=zoom-up][data-aos^=zoom-up] {
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -781,7 +787,15 @@
             <h1 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">お問い合わせ</h1>
             <p class="lead" data-aos="fade-up" data-aos-delay="100">
               体験入部、練習試合の申込は、お問い合わせフォームからお願いします。
-            </p>
+            </P>
+            <noscript>
+              <p><font color="red">
+                (注) Javascript が有効になっていないため、正常に送信できない可能性があります。
+                <a href="https://forms.gle/8Tzf69oQN6PSnqtn7" target="_blank">
+                  お問合せフォーム
+                </a>
+                をご利用ください。</font></p>
+            </noscript>
           </div>
         </div>
 
