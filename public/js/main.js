@@ -8,9 +8,6 @@ jQuery(document).ready(function ($) {
 
 	"use strict";
 
-
-
-
 	var siteMenuClone = function () {
 
 		$('.js-clone-nav').each(function () {
@@ -47,42 +44,47 @@ jQuery(document).ready(function ($) {
 		$('form').submit(function () {
 			event.preventDefault(); // 本来のPOSTを打ち消すおまじない
 			var data = $('form').serializeArray();  // ①form to json
-			data = parseJson(data); // ②json to 欲しい形
+			var JSONdata = parseJson(data); // ②json to 欲しい形
+
 			// ③送信
+			// テスト用 URL
+			//var url = "https://maker.ifttt.com/trigger/trigger_event/with/key/bc9lYfWVFmBDOD0FzWdlkT";
+			// 本番用 URL
+			var url = "https://maker.ifttt.com/trigger/send_mail/with/key/bc9lYfWVFmBDOD0FzWdlkT";
 
-			
-			$.post("https://maker.ifttt.com/trigger/send_mail/with/key/bc9lYfWVFmBDOD0FzWdlkT",
-				data,
-				null
-			);
-			alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
-			location.reload();
-			//event.currentTarget();
-			/**
-			$.ajax({
+            $.ajax({
                 type : 'post',
-                url : "https://maker.ifttt.com/trigger/send_mail/with/key/bc9lYfWVFmBDOD0FzWdlkT",
-				data: JSON.stringify(data),
-                contentType: 'application/json',
-                dataType : 'json',
-                scriptCharset: 'utf-8',
-                success : function(data) {
-
-                    // Success
-                    alert("success");
-                    alert(JSON.stringify(data));
-                    $("#response").html(JSON.stringify(data));
-                },
-                error : function(data) {
-
-                    // Error
-                    alert("error");
-                    alert(JSON.stringify(data));
-                    $("#response").html(JSON.stringify(data));
-				}
-			});
-			**/
+                url : url,
+                data : JSON.stringify(JSONdata),
+                contentType: 'application/JSON',
+                dataType : 'JSON',
+				scriptCharset: 'utf-8',
+                success : eventHandler,
+                error : eventHandler
+            });
+			
 		});
+
+		// IFTTT から返ってくる POST 結果を判定する。
+		// ajax.post では常に success ではなく、 error が呼ばれるので、中身の文字列で判定する必要がある。
+		var eventHandler = function (data) {
+
+			// for debug
+			//alert(JSON.stringify(data));
+
+			// Status: 200
+			// ResponseText: "Congratulations! ..."
+			var regString = "Congratulations!";
+			if (data["status"] == 200 &&
+				data["responseText"].indexOf(regString) == 0) {
+					alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
+					location.reload();				
+				}
+			else {
+				alert("エラーが発生しました。再度お試しください。")
+			}
+
+		}
 
 		var getGradeString = function (tag) {
 			var ret = "[その他]";
@@ -119,22 +121,14 @@ jQuery(document).ready(function ($) {
 			returnJson["value1"] = `${data[0].value}(${data[1].value})`;
 			returnJson["value2"] = `${getGradeString(data[3].value)}${data[2].value}`;
 			returnJson["value3"] = `${data[4].value}`;
-			/**
-			var idx = 0;
-			for (idx = 0; idx < data.length; idx++) {
-				console.log(data[idx])
-				returnJson[data[idx].name] = data[idx].value
-			}
-			
-			 * 0: {name: "name", value: "なまえ"}
-				1: {name: "email", value: "mail@gmail.com"}
-				2: {name: "subject", value: "たいとる"}
-				3: {name: "grade", value: "grade_1"}
-				4: {name: "message", value: "本文"}
-				length: 5
-				__proto__: Array(0) 
-			 **/
 			return returnJson;
+		}
+
+		var parseHTML = function (data) {
+			var val1 = `${data[0].value}(${data[1].value})`;
+			var val2 = `${getGradeString(data[3].value)}${data[2].value}`;
+			var val3 = `${data[4].value}`;
+			return `?value1=${encodeURI(val1)}&value2=${encodeURI(val2)}&value3=${encodeURI(val3)}`;
 		}
 
 		$('body').on('click', '.arrow-collapse', function (e) {
