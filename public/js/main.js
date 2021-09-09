@@ -118,9 +118,9 @@ jQuery(document).ready(function ($) {
 		// ②変換関数：json to 欲しい形
 		var parseJson = function(data) {
 			var returnJson = {};
-			returnJson["\"value1\""] = `${data[0].value}(${data[1].value})`;
-			returnJson["\"value2\""] = `${getGradeString(data[3].value)}${data[2].value}`;
-			returnJson["\"value3\""] = `${data[4].value}`;
+			returnJson["\"Value1\""] = `${data[0].value}(${data[1].value})`;
+			returnJson["\"Value2\""] = `${getGradeString(data[3].value)}${data[2].value}`;
+			returnJson["\"Value3\""] = `${data[4].value}`;
 			return returnJson;
 		}
 
