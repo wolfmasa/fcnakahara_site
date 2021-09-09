@@ -52,6 +52,12 @@ jQuery(document).ready(function ($) {
 			// 本番用 URL
 			var url = "https://maker.ifttt.com/trigger/send_mail/with/key/bc9lYfWVFmBDOD0FzWdlkT";
 
+
+			$.post(url, JSONdata, null);
+			alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
+			location.reload();
+
+			/**
 			var postdata = JSON.stringify(JSONdata)
 			//var temp2 = "{\"value1\": \"いち\", \"value2\": \"２位\", \"value3\": \"さん\"}"
             $.ajax({
@@ -65,7 +71,7 @@ jQuery(document).ready(function ($) {
                 success : eventHandler,
                 error : eventHandler
             });
-			
+			**/
 		});
 
 		// IFTTT から返ってくる POST 結果を判定する。
