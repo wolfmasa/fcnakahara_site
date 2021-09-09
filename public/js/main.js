@@ -52,10 +52,13 @@ jQuery(document).ready(function ($) {
 			// 本番用 URL
 			var url = "https://maker.ifttt.com/trigger/send_mail/with/key/bc9lYfWVFmBDOD0FzWdlkT";
 
+			var postdata = JSON.stringify(JSONdata)
+			//var temp2 = "{\"value1\": \"いち\", \"value2\": \"２位\", \"value3\": \"さん\"}"
             $.ajax({
                 type : 'post',
                 url : url,
-                data : JSON.stringify(JSONdata),
+                data : postdata,
+				//data: "{\"value1\": \"いち\", \"Value2\": \"２位\", \"value3\": \"さん\"}",
                 contentType: 'application/json',
                 dataType : 'json',
 				scriptCharset: 'utf-8',
@@ -118,9 +121,9 @@ jQuery(document).ready(function ($) {
 		// ②変換関数：json to 欲しい形
 		var parseJson = function(data) {
 			var returnJson = {};
-			returnJson["\"Value1\""] = `${data[0].value}(${data[1].value})`;
-			returnJson["\"Value2\""] = `${getGradeString(data[3].value)}${data[2].value}`;
-			returnJson["\"Value3\""] = `${data[4].value}`;
+			returnJson["value1"] = `${data[0].value}(${data[1].value})`;
+			returnJson["value2"] = `${getGradeString(data[3].value)}${data[2].value}`;
+			returnJson["value3"] = `${data[4].value}`;
 			return returnJson;
 		}
 
