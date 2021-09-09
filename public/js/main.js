@@ -43,8 +43,8 @@ jQuery(document).ready(function ($) {
 		// formのデータをjsonに変換して送る
 		$('form').submit(function () {
 			event.preventDefault(); // 本来のPOSTを打ち消すおまじない
-			var data = $('form').serializeArray();  // ①form to json
-			var JSONdata = parseJson(data); // ②json to 欲しい形
+			var serialdata = $('form').serializeArray();  // ①form to json
+			var JSONdata = parseJson(serialdata); // ②json to 欲しい形
 
 			// ③送信
 			// テスト用 URL
@@ -56,8 +56,8 @@ jQuery(document).ready(function ($) {
                 type : 'post',
                 url : url,
                 data : JSON.stringify(JSONdata),
-                contentType: 'application/JSON',
-                dataType : 'JSON',
+                contentType: 'application/json',
+                dataType : 'json',
 				scriptCharset: 'utf-8',
                 success : eventHandler,
                 error : eventHandler
@@ -118,9 +118,9 @@ jQuery(document).ready(function ($) {
 		// ②変換関数：json to 欲しい形
 		var parseJson = function(data) {
 			var returnJson = {};
-			returnJson["Value1"] = `${data[0].value}(${data[1].value})`;
-			returnJson["Value2"] = `${getGradeString(data[3].value)}${data[2].value}`;
-			returnJson["Value3"] = `${data[4].value}`;
+			returnJson["\"value1\""] = `${data[0].value}(${data[1].value})`;
+			returnJson["\"value2\""] = `${getGradeString(data[3].value)}${data[2].value}`;
+			returnJson["\"value3\""] = `${data[4].value}`;
 			return returnJson;
 		}
 
