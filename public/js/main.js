@@ -60,7 +60,7 @@ jQuery(document).ready(function ($) {
                 data : postdata,
 				//data: "{\"value1\": \"いち\", \"Value2\": \"２位\", \"value3\": \"さん\"}",
                 contentType: 'application/json',
-                dataType : 'json',
+                dataType : 'jsonnp',
 				scriptCharset: 'utf-8',
                 success : eventHandler,
                 error : eventHandler
