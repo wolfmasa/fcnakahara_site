@@ -52,25 +52,13 @@ jQuery(document).ready(function ($) {
 			// 本番用 URL
 			var url = "https://maker.ifttt.com/trigger/send_mail/with/key/bc9lYfWVFmBDOD0FzWdlkT";
 
-			/**
-			$.post(url, JSONdata, null);
-			alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
-			location.reload();
-			**/
-
 			//Retrieve data from action method
 			var jqxhr = $.post(url, JSONdata,
-				function(data){
-					//リクエストが成功した際に実行する関数
-					alert("Data Loaded: " + data);
-				},
+				null,
 				"jsonp"
 			);
 			//Handle results
 			jqxhr.fail(function (jqXHR, textStatus, errorThrown) {
-
-				// 一旦エラー判定は除外
-				var regString = "Congratulations!";
 				if (jqXHR.status == 200) {
 						alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
 						location.reload();				
@@ -80,27 +68,6 @@ jQuery(document).ready(function ($) {
 				}
 			});
 		});
-
-		// IFTTT から返ってくる POST 結果を判定する。
-		// ajax.post では常に success ではなく、 error が呼ばれるので、中身の文字列で判定する必要がある。
-		var eventHandler = function (data) {
-
-			// for debug
-			//alert(JSON.stringify(data));
-
-			// Status: 200
-			// ResponseText: "Congratulations! ..."
-			var regString = "Congratulations!";
-			if (data["status"] == 200 &&
-				data["responseText"].indexOf(regString) == 0) {
-					alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
-					location.reload();				
-				}
-			else {
-				alert("エラーが発生しました。再度お試しください。")
-			}
-
-		}
 
 		var getGradeString = function (tag) {
 			var ret = "[その他]";
