@@ -59,28 +59,21 @@ jQuery(document).ready(function ($) {
 			**/
 
 			//Retrieve data from action method
-			var jqxhr= $.post(url, JSONdata);
+			var jqxhr = $.post(url, JSONdata,
+				function (data, textStatus, jqXHR) {
+					var regString = "Congratulations!";
+					if (data.responseText.indexOf(regString) == 0) {
+							alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
+							location.reload();				
+						}
+					else {
+						alert("エラーが発生しました。再度お試しください。")
+					}
+		
+				},
+				"json"
+			);
 			//Handle results
-			jqxhr.done(function (data, textStatus, jqXHR) {
-				var regString = "Congratulations!";
-				if (jqXHR.responseText.indexOf(regString) == 0) {
-					alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
-					location.reload();
-				}
-				else {
-					alert("エラーが発生しました。再度お試しください。")
-				}
-			});
-			jqxhr.fail(function (jqXHR, textStatus, errorThrown) {
-				var regString = "Congratulations!";
-				if (jqXHR.responseText.indexOf(regString) == 0) {
-					alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
-					location.reload();
-				}
-				else {
-					alert("エラーが発生しました。再度お試しください。")
-				}
-			});
 			/**
 			jqxhr.always(function (data, textStatus, jqXHR) {
 				var regString = "Congratulations!";
