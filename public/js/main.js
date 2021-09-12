@@ -63,9 +63,9 @@ jQuery(document).ready(function ($) {
                 type : 'post',
                 url : url,
                 data : JSONdata,
-                contentType: 'application/json',
-                dataType : 'json',
-				scriptCharset: 'utf-8',
+                //contentType: 'application/json',
+                //dataType : 'json',
+				//scriptCharset: 'utf-8',
                 success : eventHandler,
                 error : eventHandler
             });
