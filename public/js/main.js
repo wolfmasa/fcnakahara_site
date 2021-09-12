@@ -63,8 +63,7 @@ jQuery(document).ready(function ($) {
 			//Handle results
 			jqxhr.always(function (data, textStatus, jqXHR) {
 				var regString = "Congratulations!";
-				if (textStatus == 200 &&
-					data["responseText"].indexOf(regString) == 0) {
+				if (data.responseText.indexOf(regString) == 0) {
 						alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
 						location.reload();				
 					}
