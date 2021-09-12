@@ -52,26 +52,23 @@ jQuery(document).ready(function ($) {
 			// 本番用 URL
 			var url = "https://maker.ifttt.com/trigger/send_mail/with/key/bc9lYfWVFmBDOD0FzWdlkT";
 
-
+			/**
 			$.post(url, JSONdata, null);
 			alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
 			location.reload();
+			**/
 
-			/**
 			var postdata = JSON.stringify(JSONdata)
-			//var temp2 = "{\"value1\": \"いち\", \"value2\": \"２位\", \"value3\": \"さん\"}"
             $.ajax({
                 type : 'post',
                 url : url,
                 data : postdata,
-				//data: "{\"value1\": \"いち\", \"Value2\": \"２位\", \"value3\": \"さん\"}",
                 contentType: 'application/json',
                 dataType : 'jsonnp',
 				scriptCharset: 'utf-8',
                 success : eventHandler,
                 error : eventHandler
             });
-			**/
 		});
 
 		// IFTTT から返ってくる POST 結果を判定する。
@@ -133,12 +130,14 @@ jQuery(document).ready(function ($) {
 			return returnJson;
 		}
 
+		/**
 		var parseHTML = function (data) {
 			var val1 = `${data[0].value}(${data[1].value})`;
 			var val2 = `${getGradeString(data[3].value)}${data[2].value}`;
 			var val3 = `${data[4].value}`;
 			return `?value1=${encodeURI(val1)}&value2=${encodeURI(val2)}&value3=${encodeURI(val3)}`;
 		}
+		**/
 
 		$('body').on('click', '.arrow-collapse', function (e) {
 			var $this = $(this);
