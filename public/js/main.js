@@ -61,19 +61,19 @@ jQuery(document).ready(function ($) {
 			//Retrieve data from action method
 			var jqxhr= $.post(url, JSONdata);
 			//Handle results
-			jqxhr.success(eventHandler);
-				//function (result) {
-				//alert("ajax success");
-				//$('#shopResultsContainer').html(result.ViewMarkup);
-			//});
-			jqxhr.error(eventHander);
-			//function(result) {
-				//alert("ajax error");
-			//});
-			jqxhr.complete(function (result) {
-				//alert("ajax complete");
+			jqxhr.always(function (data, textStatus, jqXHR) {
+				var regString = "Congratulations!";
+				if (textStatus == 200 &&
+					data["responseText"].indexOf(regString) == 0) {
+						alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
+						location.reload();				
+					}
+				else {
+					alert("エラーが発生しました。再度お試しください。")
+				}
+	
 			});
-
+				
 			/**
 			var postdata = JSON.stringify(JSONdata)
             $.ajax({
