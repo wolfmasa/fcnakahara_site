@@ -59,11 +59,14 @@ jQuery(document).ready(function ($) {
 			**/
 
 			//Retrieve data from action method
-			var jqxhr = $.post(url, JSONdata, null,
-				"html"
-			);
+			var jqxhr = $.post(url, JSONdata);
 			//Handle results
 			jqxhr.always(function (jqXHR, textStatus, errorThrown) {
+				alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
+				location.reload();				
+
+				// 一旦エラー判定は除外
+				/**
 				var regString = "Congratulations!";
 				if (jqXHR.responseText.indexOf(regString) == 0) {
 						alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
@@ -72,21 +75,8 @@ jQuery(document).ready(function ($) {
 				else {
 					alert("エラーが発生しました。再度お試しください。")
 				}
+				**/
 			});
-				
-			/**
-			var postdata = JSON.stringify(JSONdata)
-            $.ajax({
-                type : 'post',
-                url : url,
-                data : JSONdata,
-                //contentType: 'application/json',
-                //dataType : 'json',
-				//scriptCharset: 'utf-8',
-                success : eventHandler,
-                error : eventHandler
-            });
-			**/
 		});
 
 		// IFTTT から返ってくる POST 結果を判定する。
@@ -147,15 +137,6 @@ jQuery(document).ready(function ($) {
 			returnJson["value3"] = `${data[4].value}`;
 			return returnJson;
 		}
-
-		/**
-		var parseHTML = function (data) {
-			var val1 = `${data[0].value}(${data[1].value})`;
-			var val2 = `${getGradeString(data[3].value)}${data[2].value}`;
-			var val3 = `${data[4].value}`;
-			return `?value1=${encodeURI(val1)}&value2=${encodeURI(val2)}&value3=${encodeURI(val3)}`;
-		}
-		**/
 
 		$('body').on('click', '.arrow-collapse', function (e) {
 			var $this = $(this);
