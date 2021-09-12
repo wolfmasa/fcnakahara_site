@@ -69,7 +69,6 @@ jQuery(document).ready(function ($) {
 			//Handle results
 			jqxhr.fail(function (jqXHR, textStatus, errorThrown) {
 
-				alert(jQuery.parseJSON(jqXHR.responseText));
 				// 一旦エラー判定は除外
 				var regString = "Congratulations!";
 				if (jqXHR.status == 200) {
