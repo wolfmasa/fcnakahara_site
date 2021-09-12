@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
 					//リクエストが成功した際に実行する関数
 					alert("Data Loaded: " + data);
 				},
-				"text"
+				"jsonp"
 			);
 			//Handle results
 			jqxhr.fail(function (jqXHR, textStatus, errorThrown) {
