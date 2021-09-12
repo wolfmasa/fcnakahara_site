@@ -69,9 +69,10 @@ jQuery(document).ready(function ($) {
 			//Handle results
 			jqxhr.fail(function (jqXHR, textStatus, errorThrown) {
 
+				alert(jqXHR.jqXHR.getResponseHeader)
 				// 一旦エラー判定は除外
 				var regString = "Congratulations!";
-				if (jqXHR.responseText.indexOf(regString) == 0) {
+				if (jqXHR.status == 200) {
 						alert("問い合わせを送信しました。３日以内に、担当コーチよりご連絡いたします。");
 						location.reload();				
 					}
