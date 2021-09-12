@@ -62,9 +62,9 @@ jQuery(document).ready(function ($) {
             $.ajax({
                 type : 'post',
                 url : url,
-                data : postdata,
+                data : JSONdata,
                 contentType: 'application/json',
-                dataType : 'jsonnp',
+                dataType : 'json',
 				scriptCharset: 'utf-8',
                 success : eventHandler,
                 error : eventHandler
