@@ -58,6 +58,23 @@ jQuery(document).ready(function ($) {
 			location.reload();
 			**/
 
+			//Retrieve data from action method
+			var jqxhr= $.post(url, JSONdata);
+			//Handle results
+			jqxhr.success(eventHandler);
+				//function (result) {
+				//alert("ajax success");
+				//$('#shopResultsContainer').html(result.ViewMarkup);
+			//});
+			jqxhr.error(eventHander);
+			//function(result) {
+				//alert("ajax error");
+			//});
+			jqxhr.complete(function (result) {
+				//alert("ajax complete");
+			});
+
+			/**
 			var postdata = JSON.stringify(JSONdata)
             $.ajax({
                 type : 'post',
@@ -69,6 +86,7 @@ jQuery(document).ready(function ($) {
                 success : eventHandler,
                 error : eventHandler
             });
+			**/
 		});
 
 		// IFTTT から返ってくる POST 結果を判定する。
