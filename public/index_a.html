@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <title>FC中原公式ウェブサイト</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="al:web:should_fallback" content="false" />
+
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jpn.min.css">
+
+  <link rel="apple-touch-icon" type="image/png" href="favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="favicons/icon-192x192.png">
+  <style>
+    /* IE11 */
+    @media all and (-ms-high-contrast:none) {
+
+      *::-ms-backdrop,
+      [data-aos^=fade][data-aos^=fade],
+      [data-aos^=zoom][data-aos^=zoom] {
+        opacity: 1;
+      }
+
+      *::-ms-backdrop,
+      [data-aos^=fade-up][data-aos^=fade-up],
+      [data-aos^=zoom-up][data-aos^=zoom-up] {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="site-wrap">
+    <!-- モバイル用のナビゲーション　-->
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- PC用のナビゲーション -->
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-1 site-logo">
+              <a href="index.html" class="mb-1">
+                <img src="images/logo002.png" height="50px">
+                <span class="logo-title">FC中原</span>
+              </a>
+            </h1>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#team-info" class="nav-link">お知らせ</a></li>
+                <li class="has-children">
+                  <a href="#team-info" class="nav-link">チーム</a>
+                  <ul class="dropdown">
+                    <li><a href="#team-concepts" class="nav-link">FC中原とは</a></li>
+                    <li><a href="#team-description" class="nav-link">活動内容</a></li>
+                    <li><a href="#team-schedule" class="nav-link">スケジュール</a></li>
+                  </ul>
+                </li>
+
+                <li class="has-children">
+                  <a href="#team-join" class="nav-link">入部案内</a>
+                  <ul class="dropdown">
+                    <li><a href="#team-join" class="nav-link">入部希望の方へ</a></li>
+                    <li><a href="#team-trial" class="nav-link">体験入部</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#team-result">主な戦績</a>
+                  <ul class="dropdown">
+                    <li><a href="#result_6">６年生</a></li>
+                    <li><a href="#result_5">５年生</a></li>
+                    <li><a href="#result_4">４年生</a></li>
+                    <li><a href="#result_3">３年生</a></li>
+                    <li><a href="#result_2">２年生</a></li>
+                    <li><a href="#result_1">１年生</a></li>
+                    <li><a href="#result_girl">少女（レジーナ）</a></li>
+                  </ul>
+                </li>
+
+
+                <li><a href="#contact-section" class="nav-link">お問い合わせ</a></li>
+                <!--<li><a href="#contact-section" class="nav-link">Contact</a></li>-->
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
+              class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <!-- トップの画像 -->
+    <div class="site-blocks-cover overlay" style="background-image: url(images/top.jpg);" data-aos="fade"
+      id="home-section">
+      <div class="container">
+
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-md-8 mt-lg-5 text-center">
+            <h1 class="text-uppercase mb-5 top-image-text" data-aos="fade-up">Football Club<br>Nakahara</h1>
+
+            <div data-aos="fade-up" data-aos-delay="100">
+              <a href="#team-schedule" class="btn smoothscroll btn-primary mr-2 mb-2">スケジュール</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about-section" class="mouse smoothscroll">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
+    </div>
+
+    <!-- お知らせ -->
+    <section class="site-section border-bottom bg-light" id="team-info">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h1 class="section-title mb-0">お知らせ</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 mb-2" data-aos="fade-up" data-aos-delay="">
+            <h4 class="info-date">2023.10.14</h4>
+          </div>
+          <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="">
+            <a href="#result_5">U-11 (5年生)</a><br>
+            <a href="https://kawasaki-fa.com/u12/2023_hungary_20231014_01/" target="_blank">ハンガリー大使館杯 U-11川崎市秋季サッカー大会2023 にて 3位</a> となりました。<br>
+            <br>たくさんの応援、誠にありがとうございました。
+            <br>(当日の様子は <a href="https://www.instagram.com/p/CyanhrJyFS7/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+              target="_blank">FC中原 Instagram</a> でもご紹介しています)
+
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </section>
+
+  <!-- チーム紹介 -->
+  <div class="site-section cta-big-image" id="team-concepts">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h1 class="section-title mb-0">FC中原 クラブ方針</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+          <div class="mb-4">
+            <h3 class="h3 mb-4 text-black">ミッション</h3>
+            <ul class="list-unstyled ul-check success">
+              <li>地域のサッカークラブとして</li>
+              <ul>「サッカーの楽しさ、素晴らしさを伝える」</ul>
+              <ul>「サッカーを通じて人を育てる」</ul>
+            </ul>
+            <p><a
+              href="policy.pdf"
+              class="smoothscroll btn btn-primary" target="_blank">活動方針 詳細</a></p>
+          </div>
+        </div>
+        <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+          <div class="mb-4">
+            <h3 class="h3 mb-4 text-black">ビジョン</h3>
+            <ul class="list-unstyled ul-check success">
+              <li>サッカー選手としての育成<br>
+                次のステージでのサッカーに繋がる、通用する選手</li>
+              <li>社会で必要とされる積極性や粘り強さ、仲間を思いやる気持ち、リーダーシップやモチベーションの高さなどの非認知能力(※)を高める</li>
+              <li>勝利と育成の両立</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-11 mb-auto" data-aos="fade-up" data-aos-delay="">
+          <div class="mb-4">
+            <h3 class="h3 mb-4 text-black">指導指針</h3>
+            <ul class="list-unstyled ul-check success">
+              <li>競技として</li>
+              <ul>・勝つために必要な技術、戦術、フィジカル、メンタル、コミュニケーション力などを
+              高める指導をし、子供たちの「勝ちたい」を引き出す<br>
+              ただし、結果にこだわったうえでのプロセスや気持ちを重要視する。</ul>
+              <ul>・次の年代に繋がるベースとして、技術、インテリジェンス、試合に向けた準備などを指導する</ul>
+              <ul>・戦える集団であるために選手1人1人が常に勝負にこだわり、“戦う強い気持ち”を持つ</ul>
+              <ul>・チームが勝つために何をすべきか自ら考え、全力を尽くして行動する選手を育成する</ul>
+              <ul>・様々な局面(”認知”、”分析”)でより良い判断をくだし、
+              適切なタイミングで”実行”できるインテリジェンスを養う</ul>
+              <ul>・その上で失敗を恐れずに「チャレンジ」し続けるマインドを養う</ul>
+              <ul>・自立心を育むため、自分でできることは自分でやるよう促す</ul>
+              <ul>・指導者も常に指導法をアップデートし学ぶ姿勢を持ち続ける</ul>
+              <ul><br></ul>
+              <li>楽しみとして</li>
+              <ul>・大前提として、サッカーの楽しさ、素晴らしさを伝える</ul>
+              <ul>・子供たち、保護者、コーチ含めた皆が楽しむ場とし、積極的な挨拶や声掛けの中から、勝つ楽しさ以外にも遊ぶ楽しさを感じてもらう</ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-11 mb-auto" data-aos="fade-up" data-aos-delay="">
+          <div class="mb-4">
+            <h3 class="h3 mb-4 text-black">トレーニング目標</h3>
+            <ul class="list-unstyled ul-check success">
+              <li>全カテゴリー共通トレーニング目標</li>
+              <ol>(1) 1選手1人1人とコミュニケーションをとり楽しめる環境づくり</ol>
+              <ol>(2) サッカーを通しての人間性の教育的指導</ol>
+              <ol>(3) 基本スキル(テクニックアクション)の育成</ol>
+              <ol>(4) 4つの技術の質の向上=運ぶ、 飛ばす、受ける、奪うの質の追求</ol>
+              <ol>(5) 判断を伴ったトレーニング</ol>
+              <ol>(6) 原理原則を踏まえたインテリジェンスを養うトレーニング</ol>
+              <ul><br></ul>
+              <li>各カテゴリー別トレーニング目標</li>
+              <ul>U6: <br>
+                ◯様々な運動を楽しみながら運動能力を養う(コーディネーション) ◯ボールに慣れる(ボールフィーリング) </ul>
+              <ul>U8: <br>
+                ◯基本スキルの育成 ◯対人スキル(1対1)の育成 ◯個人戦術の基礎的な内容 ◯ドリブル強化 ◯ボールに速く寄る、強いプレス、連続・継続性(ハイインテンシティ)</ul>
+              <ul>U10: <br>
+                ◯対人スキル(1対1)、個人戦術の向上 ◯グループ戦術の基礎的な内容(2対1以上) (◯ハイインテンシティ)</ul>
+              <ul>U12: <br>
+                ◯対人スキル、個人戦術、グループ戦術(2対2以上)の向上 ◯フィジカル強化(トップチープ選手) (◯ハイインテンシティ)</ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- 活動内容 -->
+  <section class="site-section border-bottom bg-light" id="team-description">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h1 class="section-title mb-3">活動内容</h1>
+        </div>
+      </div>
+      <div class="row align-items-stretch">
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+          <div class="unit-4">
+
+            <div class="unit-4-icon mr-4">
+              <span class="text-primary"><img src="fonts/flaticon/map64.png"></span>
+            </div>
+
+            <div>
+              <h3>場所</h3>
+              <p>主に、神奈川県川崎市中原区で活動しています。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="unit-4">
+            <div class="unit-4-icon mr-4"><span class="text-primary"><img src="fonts/flaticon/stadium64.png"></span>
+            </div>
+            <div>
+              <h3>対象年齢</h3>
+              <p>キッズ（年中・年長）、小学１〜６年生、レジーナ（女子チーム）で活動しています。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="unit-4">
+            <div class="unit-4-icon mr-4"><span class="text-primary"><img src="fonts/flaticon/calendar64.png"></span>
+            </div>
+            <div>
+              <h3>曜日</h3>
+              <p>土日祝日に、練習や試合（遠征を含む）を行っています。</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
+          <div class="unit-4">
+            <div class="unit-4-icon mr-4"><span class="text-primary"><img src="fonts/flaticon/cup64.png"></span></div>
+            <div>
+              <h3>費用</h3>
+              <p>部費は年間、キッズ¥6000、少女¥12000、小学１年生～２年生¥24000、小学３年生～６年生¥36000 となります。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="unit-4">
+            <div class="unit-4-icon mr-4"><span class="text-primary"><img src="fonts/flaticon/uniform64.png"></span>
+            </div>
+            <div>
+              <h3>服装・用具</h3>
+              <p>練習場の服装は自由です。運動のできる服装、運動靴（トレーニングシューズ等）、すね当て、ボール（４号球）、飲み物をご用意ください。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="unit-4">
+            <div class="unit-4-icon mr-4"><span class="text-primary"><img src="fonts/flaticon/heart64.png"></span>
+            </div>
+            <div>
+              <h3>保険</h3>
+              <p>万が一に備え、スポーツ安全保険（¥1000/年）に全員加入いたします。詳しくは担当コーチにご確認ください。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- スケジュール -->
+  <section class="site-section border-bottom" id="team-schedule">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h1 class="section-title mb-0">スケジュール</h1>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 mb-2" data-aos="fade-up" data-aos-delay="">
+          <h3 class="schedule-month">2023年 09月</h3>
+        </div>
+        <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="">
+          <div class="btn-group" role="group" aria-label="Schedule Contents">
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTOmgpe_ioHFw4rNdtMkbnwazqMDngQwoQFZCR4TCUA8v0G8Mq-aRgNOKdoI20REdWAXzr68w36auYM/pubhtml?gid=1783058353&single=true"
+            role="button" class="btn btn-outline-primary" target="_blank">html版</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTOmgpe_ioHFw4rNdtMkbnwazqMDngQwoQFZCR4TCUA8v0G8Mq-aRgNOKdoI20REdWAXzr68w36auYM/pub?gid=1783058353&single=true&output=pdf"
+            role="button" class="btn btn-outline-secondary" target="_blank">PDF版</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 mb-2" data-aos="fade-up" data-aos-delay="">
+          <h3 class="schedule-month">2023年 10月</h3>
+        </div>
+        <div class="col-lg-7 mb-5" data-aos="fade-up" data-aos-delay="">
+          <div class="btn-group" role="group" aria-label="Schedule Contents">
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTOmgpe_ioHFw4rNdtMkbnwazqMDngQwoQFZCR4TCUA8v0G8Mq-aRgNOKdoI20REdWAXzr68w36auYM/pubhtml?gid=1618684395&single=true"
+            role="button" class="btn btn-outline-primary" target="_blank">html版</a>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTOmgpe_ioHFw4rNdtMkbnwazqMDngQwoQFZCR4TCUA8v0G8Mq-aRgNOKdoI20REdWAXzr68w36auYM/pub?gid=1618684395&single=true&output=pdf"
+            role="button" class="btn btn-outline-secondary" target="_blank">PDF版</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 入部に関して -->
+  <section class="site-section border-bottom bg-light" id="team-join">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h1 class="section-title mb-0">入部希望の方へ</h1>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">
+            入部を希望される方には、チーム規約を確認の上、入部届の提出をお願いしています。<br>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+          <div class="mb-4">
+            <h3 class="h3 mb-4 text-black">チーム規約の確認</h3>
+            子供たちが目一杯サッカーを楽しめるように、あらかじめチーム規約をご確認ください。<br>
+            ご質問、懸念等ありましたら、担当コーチへご相談ください。
+          </div>
+          <p><a
+              href="https://docs.google.com/document/d/e/2PACX-1vQjqyQ5rr64SwS8yMhA57U9ldD9P581XIPuQr8SQZ40NCyXHgC_LAFjBnprfjk8Fy9FJymBXQ_BXp_E/pub"
+              class="smoothscroll btn btn-primary" target="_blank">チーム規約</a></p>
+        </div>
+
+        <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+          <div class="mb-4">
+            <h3 class="h3 mb-4 text-black">入部届の提出</h3>
+            入部届につきましては、所定のフォーマットに記入の上、紙もしくはPDFにて担当コーチにご提出ください。
+          </div>
+          <p><a href="https://docs.google.com/document/d/1NGdcYjDCZ1pYRj47cxcG9Hw1TyteY9e12U3OHs62tm0/edit?usp=sharing"
+              class="smoothscroll btn btn-primary" target="_blank">入部届</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 体験入部の説明 -->
+  <section class="site-section border-bottom" id="team-trial">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-8 text-center">
+          <h1 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">体験入部</h1>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">
+            FC中原では、一緒にサッカーを楽しむ仲間を大募集しています！！ <br>ぜひ一度、体験入部にお越しください。
+          </p>
+        </div>
+      </div>
+      <div class="row mb-5">
+
+        <div class="col-lg-5 ml-auto mb-5 order-1 order-lg-2" data-aos="fade" data-aos="fade-up" data-aos-delay="">
+          <img src="images/trial_image.jpg" alt="Image" class="img-fluid rounded">
+        </div>
+        <div class="col-lg-7 order-2 order-lg-1" data-aos="fade">
+
+          <div class="row">
+            <div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="">
+              <div class="unit-4">
+                <div class="unit-4-icon mr-4 mb-3">
+                  <span class="text-primary"><img src="fonts/flaticon/substitution.png"></span>
+                </div>
+                <div>
+                  <h3>体験入部への申込み</h3>
+                  <p>
+                    <a href="#team-schedule">スケジュール</a>で練習日を確認の上、<a
+                      href="#contact-section">お問い合わせフォーム</a>より、以下の必要事項をご連絡ください。
+                  </p>
+                  <ul class="list-unstyled ul-check success">
+                    <li>参加希望日</li>
+                    <li>名前（漢字・ひらがな）</li>
+                    <li>生年月日</li>
+                    <li>通学先（小学校・保育園・幼稚園）</li>
+                    <li>質問事項</li>
+                  </ul>
+                  <p><a href="#contact-section" class="smoothscroll btn btn-primary">お問い合わせ</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="unit-4">
+                <div class="unit-4-icon mr-4 mb-3">
+                  <span class="text-primary"><img src="fonts/flaticon/cap.png"></span>
+                </div>
+                <div>
+                  <h3>当日用意するもの</h3>
+                  <p>体験入部の際は、こちらの持ち物をご用意ください。</p>
+                  <ul class="list-unstyled ul-check success">
+                    <li>運動できる服装</li>
+                    <li>運動靴（トレーニングシューズ）</li>
+                    <li>飲み物</li>
+                    <li>ボール（４号球）</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 主な戦績 -->
+  <section class="site-section border-bottom bg-light" id="team-result">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-8 text-center">
+          <h1 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">主な戦績</h1>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">各年度をクリックすると、詳細な試合結果を確認できます。</p>
+        </div>
+      </div>
+
+      <div class="card-result" id="result_6">
+        <div class="card mb-4 shadow-sm" data-aos="fade-up">
+          <div class="card-header">
+            <h3>6年生</h3>
+          </div>
+          <div class="card-body text-primary">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-5 team-photo-box">
+                <img src="images/fc2011_20201103_2.jpg" alt="Image" class="img-fluid team-photo">
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- [2023.02.04] 第14回川崎ケーブルテレビ杯新人戦 ベスト8</li>
+                  <li>- [2022.10.30] Hungry U-11川崎市サッカー大会2022 ５年生大会 3位</li>
+                  <li>- [2022.06.26] 第34回八王子いちょう杯 ５年生大会 準優勝</li>
+                  <li>- [2021.07.03] かわしん杯(ブルー･ホワイト) ベスト16</li>
+                  <li>- [2021.05.16] 第88回湘南チャレンジ杯（Bチーム）優勝</li>
+                  <li>- [2021.05.04] 全力中原区祭 準優勝</li>
+                  <li>- [2021.04.04] YSgem Junior CUP 4位</li>
+                  <li>- [2021.03.07] RANTEC CUP U-9 準優勝</li>
+                  <li>- [2020.12.27] 入二杯 準優勝</li>
+                  <li>- [2020.11.15] Ｎリーグ（Ｂリーグ） 優勝</li>
+                  <li>- [2020.02.24] フロンタウンカップ 3位</li>
+                  <li>- [2020.02.24] ラゾラック杯 4位</li>
+                  <li>- [2020.02.02] ルベントカップ 優勝</li>
+                  <li>- [2019.10.14] ラゾラック杯 4位</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-5 card-footer-title">
+                各年度の試合結果
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Result Detail">
+                  <a class="btn btn-primary"
+                    href="https://docs.google.com/spreadsheets/d/1faw87UJQPh72PVjeBM52llQLqpNwTyZzStgH3qCyG28/edit#gid=0"
+                    role="button" target="_blanky">2023年</a>
+                  <a class="btn btn-primary"
+                    href="https://docs.google.com/spreadsheets/d/1-PXnOeXrF0WuhOGsP3M9n0qnupoomRqY-fNdnYK7nJ4/edit#gid=0"
+                    role="button" target="_blanky">2022年</a>
+                  <a class="btn btn-primary"
+                    href="https://docs.google.com/spreadsheets/d/1k7ckDCcMAykJLQSnBba0FXeWhnazfNLHXqesx3BiuTU/edit#gid=0"
+                    role="button" target="_blanky">2021年</a>
+                  <a class="btn btn-primary"
+                    href="https://docs.google.com/spreadsheets/d/1u3rOUtOvQt5aXn541v-mOAAOFeBSqjQAiVtfp30ZRBg/edit#gid=0"
+                    role="button" target="_blank">2020年</a>
+                  <a class="btn btn-primary"
+                    href="https://docs.google.com/spreadsheets/d/1WOcu2mdtipN53rUwWXSZ_Kf_cNAbVxAik8y1pJ7KEIQ/edit#gid=0"
+                    role="button" target="_blank">2019年</a>
+                  <a class="btn btn-primary" href="result/fc2011/result1.htm" role="button" target="_blank">2018年</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-result" id="result_5">
+        <div class="card mb-4 shadow-sm" data-aos="fade-up">
+          <div class="card-header">
+            <h3>5年生</h3>
+          </div>
+          <div class="card-body text-primary">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-5 team-photo-box">
+                <img src="images/fc2012_20201025.jpg" alt="Image" class="img-fluid team-photo">
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- [2023.10.14] ハンガリー大使館杯 U-11川崎市秋季サッカー大会2023 3位</li>
+                  <li>- [2023.06.25] 第35回八王子いちょう杯 5年生大会 優勝</li>
+                  <li>- [2022-23 season] Colorful LEAGUE U-10：優勝</li>
+                  <li>- [2023.01.29] 日産CUP 低学年の部 ブロック大会：優勝　中央大会：ベスト16</li>
+                  <li>- [2022.11.19] 第41回小田原カップサッカーフェスティバル U10 優勝</li>
+                  <li>- [2022.06.25] かわしん杯 ホワイト：ベスト8 ブルー：ベスト16</li>
+                  <li>- [2022.03.06] 長谷工PREMIER LEAGUE Kanagawa U-9 優勝</li>
+                  <li>- [2021.11.23] Ｎリーグ（Aリーグ） 優勝</li>
+                  <li>- [2021.09.11] Ｎリーグ（Ｂリーグ） 優勝</li>
+                  <li>- [2020.12.20] 川崎低学年大会チャンピオンズリーグ 優勝</li>
+                  <li>- [2020.10.25] 川崎市中原区春季低学年大会 優勝</li>
+                  <li>- [2020.07.24] 全力蹴球カップ 3位</li>
+                  <li>- [2020.02.01] 平間カップ 準優勝</li>
+                  <li>- [2020.01.13] 大ヶ谷戸杯 ブルー優勝 ホワイト5位</li>
+                  <li>- [2019.12.15] フレネミー杯 優勝</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-5 card-footer-title">
+                各年度の試合結果
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Result Detail">
+                  <button type="button" class="btn btn-secondary">2024年</button>
+                  <a class="btn btn-primary" href="http://fcnakahara.nobody.jp/fc2012/result/result5.htm" role="button"
+                    target="_blank">2023年</a>
+                  <a class="btn btn-primary" href="http://fcnakahara.nobody.jp/fc2012/result/result4.htm" role="button"
+                    target="_blank">2022年</a>
+                  <a class="btn btn-primary" href="http://fcnakahara.nobody.jp/fc2012/result/result3.htm" role="button"
+                    target="_blank">2021年</a>
+                  <a class="btn btn-primary" href="http://fcnakahara.nobody.jp/fc2012/result/result2.htm" role="button"
+                    target="_blank">2020年</a>
+                  <a class="btn btn-primary" href="http://fcnakahara.nobody.jp/fc2012/result/result1.htm" role="button"
+                    target="_blank">2019年</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-result" id="result_4">
+        <div class="card mb-4 shadow-sm" data-aos="fade-up">
+          <div class="card-header">
+            <h3>4年生</h3>
+          </div>
+          <div class="card-body text-primary">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-5 team-photo-box">
+                <img src="images/fc2013_20210905.jpg" alt="Image" class="img-fluid team-photo">
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- [2023.08.13] 富士住健CUP 御殿場ジュニアサッカー大会 3位</li>
+                  <li>- [2023.06.24] かわしん杯 ブルー：ベスト16 ホワイト：ベスト32</li>
+                  <li>- [2022.12.17] 川崎ウィングス杯 準優勝</li>
+                  <li>- [2022.09.11] リバーカップ 準優勝</li>
+                  <li>- [2022.03.21] ラゾクラック杯2年生大会 準優勝</li>
+                  <li>- [2022.02.23] 六会湘南台杯 U-8 準優勝</li>
+                  <li>- [2022.02.20] MIHATA WINTER LEAGUE U-8 優勝</li>
+                  <li>- [2022.02.13] 野川キッカーズFC CUP U-8 準優勝</li>
+                  <li>- [2021.11.20] JUNTOS CUP U-8 優勝</li>
+                  <li>- [2021.10.24] ふらっとさんが行く！CUP U-8 準優勝</li>
+                  <li>- [2021.07.11] 第38回川崎市春季低学年大会 ベスト8</li>
+                  <li>- [2021.05.22] おそうじ天下杯ピュアナノCUP 3位</li>
+                  <li>- [2021.05.04] 川崎市中原区春季低学年大会 4位</li>
+                  <li>- [2021.03.27] ラゾクラック杯1年生大会 3位</li>
+                  <li>- [2020.08.02] フレネミー杯 優勝</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-5 card-footer-title">
+                各年度の試合結果
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Result Detail">
+                  <button type="button" class="btn btn-secondary">2025年</button>
+                  <button type="button" class="btn btn-secondary">2024年</button>
+                  <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRtdBsWnQnUaW6PP84epTpyZAfxcWm_RnIBq237r2ZOit4QVVz78fHohd-QBLBQQ/pubhtml" role="button"
+                    target="_blank">2023年</a>
+                  <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTYQiR5PrxHP892oNuFbbXPIGj1C3kelErLed2TRPpczSsd6PNdxIRtqq3n5XcUAQ/pubhtml" role="button"
+                    target="_blank">2022年</a>
+                  <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQE7nJO92VjU6dhzwvqe-NeJ1GtCQ7N7m88SZtmbQlFxQVqvDiPF-X8Um0piXlXaQ/pubhtml" role="button"
+                    target="_blank">2021年</a>
+                  <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQJVBltGACNcZxgX7fuBbYO_OuAilYTecDWwyRKKTrvIO3Xw-aHmlD--t5a-da6ow/pubhtml" role="button"
+                    target="_blank">2020年</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-result" id="result_3">
+        <div class="card mb-4 shadow-sm" data-aos="fade-up">
+          <div class="card-header">
+            <h3>3年生</h3>
+          </div>
+          <div class="card-body text-primary">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-5 team-photo-box">
+                <img src="images/fc2014_05.jpg" alt="Image" class="img-fluid team-photo">
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- [2023.02.18] SAGAWA CUP 2022/23 U-8　準優勝</li>
+                  <li>- [2023.01.15] 立川FC AZZURROカップ　準優勝</li>
+                  <li>- [2022.12.18] メリオールカップ　優勝</li>
+                  <li>- [2022.12.17] さぎぬま杯　準優勝</li>
+                  <li>- [2022.09.04] 2022年 平間カップ 2年生大会　優勝</li>
+                  <li>- [2022.07.31] FC. JUNTOS CUP 優勝</li>
+                  <li>- [2022.07.02] 第39回川崎市春季低学年大会 ベスト8</li>
+                  <li>- [2022.05.03] 川崎市中原区春季低学年大会（区長杯） 準優勝</li>
+                  <li>- [2021.11.23] ラゾクラック杯1年生大会 優勝</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-5 card-footer-title">
+                各年度の試合結果
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Result Detail">
+                  <button type="button" class="btn btn-secondary">2026年</button>
+                  <button type="button" class="btn btn-secondary">2025年</button>
+                  <button type="button" class="btn btn-secondary">2024年</button>
+                  <a class="btn btn-primary"
+                    href="https://drive.google.com/file/d/17HCssDfzbBx7ERQOlEERLUfX463CeANo/view?usp=drive_link"
+                    role="button" target="_blank">2023年</a>
+                  <a class="btn btn-primary"
+                    href="https://drive.google.com/file/d/1ZEfCIe-zl75vhNqaB_Z-J21-o5h28t4Y/view?usp=share_link"
+                    role="button" target="_blank">2022年</a>
+                  <a class="btn btn-primary"
+                    href="https://drive.google.com/file/d/10Da7bEkFLI6LyNKR4XGs_n1Ow66BPGkA/view?usp=sharing"
+                    role="button" target="_blank">2021年</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-result" id="result_2">
+        <div class="card mb-4 shadow-sm" data-aos="fade-up">
+          <div class="card-header">
+            <h3>2年生</h3>
+          </div>
+          <div class="card-body text-primary">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-5 team-photo-box">
+                <img src="images/fc2015.jpg" alt="Image" class="img-fluid team-photo">
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- [2023.09.23] 第189回湘南チャレンジ杯 U8大会 優勝</li>
+                  <li>- [2023.09.17] Future Star CUP - 2023 Autumn Series U8大会 優勝</li>
+                  <li>- [2023.07.08] 第40回川崎市低学年サッカー大会 準優勝</li>
+                  <li>- [2023.05.28] FC明浜カップ U8大会 準優勝</li>
+                  <li>- [2023.03.04] 第15回 R.F.C CUP 優勝</li>
+                  <li>- [2023.02.23] 多摩ジュニア杯 U7大会 優勝</li>
+                  <li>- [2022.11.03] 明治安田生命CUP 準優勝</li>
+                  <li>- [2022.07.30] JUNTOS CUP 優勝</li>
+                  <li>- [2022.07.18] YSGEM CUP 準優勝</li>
+                  <li>- [2022.05.05] ラゾクラック杯 準優勝</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-5 card-footer-title">
+                各年度の試合結果
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Result Detail">
+                  <button type="button" class="btn btn-secondary">2027年</button>
+                  <button type="button" class="btn btn-secondary">2026年</button>
+                  <button type="button" class="btn btn-secondary">2025年</button>
+                  <button type="button" class="btn btn-secondary">2024年</button>
+                  <a class="btn btn-primary"
+                    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQml-50awLDy2Yq22UaStZcolrfhVFlPaIyzptU23drQNhz1G2M7ms8Fq7vt5Ujov4MGhnlOraJeJKI/pubhtml?gid=671848106&single=true"
+                    role="button" target="_blank">2023年</a>
+                  <a class="btn btn-primary"
+                    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQml-50awLDy2Yq22UaStZcolrfhVFlPaIyzptU23drQNhz1G2M7ms8Fq7vt5Ujov4MGhnlOraJeJKI/pubhtml?gid=339411416&single=true"
+                    role="button" target="_blank">2022年</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-result" id="result_1">
+        <div class="card mb-4 shadow-sm" data-aos="fade-up">
+          <div class="card-header">
+            <h3>1年生</h3>
+          </div>
+          <div class="card-body text-primary">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-5 team-photo-box">
+                <img src="images/fc2016_20230705.jpg" alt="Image" class="img-fluid team-photo">
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- [2023.07.17] U-7 ラゾクラック杯 優勝</li>
+                  <li>- [2023.06.11] U-7 LHQ杯 優勝</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-5 card-footer-title">
+                各年度の試合結果
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Result Detail">
+                  <button type="button" class="btn btn-secondary">2028年</button>
+                  <button type="button" class="btn btn-secondary">2027年</button>
+                  <button type="button" class="btn btn-secondary">2026年</button>
+                  <button type="button" class="btn btn-secondary">2025年</button>
+                  <button type="button" class="btn btn-secondary">2024年</button>
+                  <a class="btn btn-primary"
+                    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT90a-fI6P6ZAiRQ2IhLT5HAfP2hsmKp3l1iEU7WbxHhP--7uFWRDIUeLn5WuXgpJr8RMFGl8bf8C_4/pubhtml?gid=0&single=true"
+                    role="button" target="_blank">2023年</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-result" id="result_girl">
+        <div class="card mb-4 shadow-sm" data-aos="fade-up">
+          <div class="card-header">
+            <h3>少女（レジーナ）</h3>
+          </div>
+          <div class="card-body text-primary">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-5 team-photo-box">
+                <img src="images/fcgirl.jpg" alt="Image" class="img-fluid team-photo">
+              </div>
+              <div class="col-lg-6 col-md-7">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>- [2023.05.04]第30回 川崎市春季少女サッカー大会 4位</li>
+                  <li>- [2022.07.02]第29回 川崎市春季少女サッカー大会 3位</li>
+                  <li>- [2021.12.18]第40回 松村杯 PUMAカップ争奪 秋季少年少女サッカー大会 3位</li>
+                  <li>- [2020.11.01]第39回 松村杯 PUMAカップ争奪 秋季少年少女サッカー大会 準優勝</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SNS -->
+  <section class="site-section border-bottom" id="team-result">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-8 text-center">
+          <h1 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">ソーシャルアカウント（SNS）</h1>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">FacebookやInstagramでも情報発信をしています。ぜひフォローをお願いします。</p>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6 text-center">
+          <p class="mb-4">
+            <a href="https://www.facebook.com/fcnakahararegina/" target="_blank">
+              <span class="icon-facebook d-block h4 text-primary"></span>
+              <span>Facebook / FC中原レジーナ</span>
+            </a>
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <p class="mb-0">
+            <a href="https://www.instagram.com/fcnakahara.1992/" target="_blank">
+              <span class="icon-instagram d-block h4 text-primary"></span>
+              <span>Instagram / FC中原</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 問い合わせフォーム -->
+  <section class="site-section border-bottom bg-light" id="contact-section" data-aos="fade">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center" data-aos="fade">
+          <h1 class="section-title mb-0">お問い合わせ</h1>
+          <p><a href="#team-trial">体験入部</a>や練習試合は随時受け付けております。対象学年(キッズ、小学１～６年生、少女)を明記し、メールにてご連絡ください。</p>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-12 text-center">
+          <p class="mb-4">
+            <a href="mailto:info@fcnakahara.net" target="_blank">
+              <span class="icon-envelope-o d-block h4 text-primary"></span>
+              <span><b>info@fcnakahara.net</b></span>
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="footer-heading mb-4">FC中原とは</h2>
+              <p>神奈川県川崎市中原区で活動している川崎市サッカー協会第4種少年委員会登録チームです。</p>
+            </div>
+            <div class="col-md-3 ml-auto">
+              <h2 class="footer-heading mb-4">ページ内リンク</h2>
+              <ul class="list-unstyled">
+                <li><a href="#tema-concepts" class="smoothscroll">チーム</a></li>
+                <li><a href="#team-join" class="smoothscroll">入部案内</a></li>
+                <li><a href="#team-schedule" class="smoothscroll">スケジュール</a></li>
+                <li><a href="#team-result" class="smoothscroll">主な戦績</a></li>
+                <li><a href="#contact-section" class="smoothscroll">お問い合わせ</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h2 class="footer-heading mb-4">SNS</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.facebook.com/fcnakahararegina/" target="_blank">
+                    <span class="icon-facebook" />
+                    <span class="footer-sns-title">FC中原 レジーナ</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/fcnakahara.1992/" target="_blank">
+                    <span class="icon-instagram" />
+                    <span class="footer-sns-title">FC中原</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h2 class="footer-heading mb-4">ドキュメント</h2>
+          <ul class="list-unstyled">
+            <li><a
+                href="https://docs.google.com/document/d/e/2PACX-1vQjqyQ5rr64SwS8yMhA57U9ldD9P581XIPuQr8SQZ40NCyXHgC_LAFjBnprfjk8Fy9FJymBXQ_BXp_E/pub"
+                class="smoothscroll" target="_blank">チーム規約</a></li>
+            <li><a
+                href="https://docs.google.com/document/d/1NGdcYjDCZ1pYRj47cxcG9Hw1TyteY9e12U3OHs62tm0/edit?usp=sharing"
+                class="smoothscroll" target="_blank">入部届</a></li>
+            <li><a href="#services-section" class="smoothscroll">フィールドの書き方</a></li>
+            <li><a href="#testimonials-section" class="smoothscroll">試合記録</a></li>
+            <li><a href="#contact-section" class="smoothscroll">審判記録 (EXCEL/PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pt-5 mt-5 text-center">
+        <div class="col-md-12">
+          <div class="border-top pt-5">
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved FC Nakahara
+              <br> This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a
+                href="https://colorlib.com" target="_blank">Colorlib</a>
+              <br>
+              Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita
+                Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Top Button-->
+  <div id="page_top"><a href="#"></a></div>
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
