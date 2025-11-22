@@ -19,6 +19,22 @@
             {
               "key": "Access-Control-Allow-Headers",
               "value": "Origin, X-Requested-With, Content-Type, Accept"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
             }
           ]
         }
@@ -43,6 +59,22 @@
             {
               "key": "Access-Control-Allow-Headers",
               "value": "Origin, X-Requested-With, Content-Type, Accept"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Referrer-Policy",
+              "value": "strict-origin-when-cross-origin"
             }
           ]
         }

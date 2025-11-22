@@ -359,7 +359,7 @@ jQuery(document).ready(function ($) {
 	var pagetop = $('#page_top');
 	pagetop.hide();
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+		if ($(this).scrollTop() > 100) {  // Show when scrolled 100px
 			pagetop.fadeIn();
 		} else {
 			pagetop.fadeOut();
@@ -368,7 +368,7 @@ jQuery(document).ready(function ($) {
 	pagetop.click(function () {
 		$('body,html').animate({
 			scrollTop: 0
-		}, 500); //0.5秒かけてトップへ移動
+		}, 500); // Scroll to top in 0.5 seconds
 		return false;
 	});
 
